@@ -1,0 +1,12 @@
+[Unit]
+Description=Serve for a web project
+After=network.target
+
+[Service]
+# WorkingDirectory=/var/www/melois.eu/react
+ExecStart=/usr/bin/serve -l 5050 -s /var/www/melois.eu/react/build
+User=root
+Group=root
+
+[Install]
+WantedBy=multi-user.target

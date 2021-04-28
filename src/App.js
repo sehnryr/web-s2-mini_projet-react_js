@@ -1,40 +1,32 @@
 import React from "react"
-import Navbar from "./Navbar"
-// import LangButton from "./LangButton"
-import {
+import Navbar from "./navbar/Navbar"
+import { 
+    setLanguage,
     setTranslations,
     setDefaultLanguage,
-    setLanguageCookie,
-    setLanguage,
-    getLanguage,
-    getLanguages,
-    translate,
-} from "react-switch-lang";
+    useTranslation,
+    getLanguage
+} from "react-multi-lang";
+
 import fr_FR from "./lang/fr_FR.json"
 import en_US from "./lang/en_US.json"
 
+const languages = { "fr_FR": fr_FR, "en_US": en_US }
+
 setTranslations({ fr_FR, en_US })
-setDefaultLanguage("fr_FR")
-setLanguageCookie() // to remember selected language
+setDefaultLanguage(Object.keys(languages)[0])
 
 function App(props) {
-    const { t } = props
-    const languages = getLanguages()
+    const t = useTranslation()
 
-    let nextLangIndex = (languages.indexOf(getLanguage()) + 1) % languages.length
-    let nextLang = languages[nextLangIndex]
+    let nextLangIndex = (Object.keys(languages).indexOf(getLanguage()) + 1) % Object.keys(languages).length
+    let nextLang = Object.keys(languages)[nextLangIndex]
 
     const handleSetLanguage = (key) => () => { setLanguage(key) }
 
     return (
         <div>
-            <Navbar titles={t("titles")} />
-            {typeof(t("titles"))}
-            {/* <LangButton 
-                currentLanguage={getLanguage()} 
-                languages={getLanguages()} 
-                setLanguage={setLanguage} 
-            /> */}
+            <Navbar titles={languages[getLanguage()]["titles"]} />
             <button type="button" onClick={handleSetLanguage(nextLang)}>
                 {t("flag")}
             </button>
@@ -42,4 +34,4 @@ function App(props) {
     )
 }
 
-export default translate(App)
+export default App

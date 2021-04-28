@@ -1,9 +1,9 @@
 {
-    "titles": [
-        "Presentation",
-        "Principle & Functioning",
-        "Demonstration",
-        "Conclusion"
-    ],
+    "titles": {
+        "presentation": "Presentation",
+        "principle": "Principle & Functioning",
+        "demo": "Demonstration",
+        "conclusion": "Conclusion"
+    },
     "flag": "🇺🇸"
 }

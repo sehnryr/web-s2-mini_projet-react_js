@@ -5,5 +5,9 @@
         "demo": "Demonstration",
         "conclusion": "Conclusion"
     },
-    "flag": "🇺🇸"
+    "code": "us",
+    "languages": {
+        "fr_FR": "French",
+        "en_US": "English"
+    }
 }

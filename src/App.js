@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import ReactPageScroller from "react-page-scroller";
 import Navbar from "./navbar/Navbar"
-import LangButton from "./lang/LangButton"
+import { RightMenu } from "./menus/Menus"
 import { 
     setLanguage,
     setTranslations,
@@ -29,22 +29,25 @@ function App(props) {
 
     return (
         <React.Fragment>
-            <Navbar titles={navbarTitles} />
-            
+            <Navbar 
+                titles={navbarTitles} 
+                currentPage={currentPage}
+            />
+
             <ReactPageScroller
                 animationTimer={600}
                 pageOnChange={handlePageChange}
                 onBeforePageScroll={console.log}
                 customPageNumber={currentPage}
             >
-                {navbarTitles.map((title) => <div>{title}</div>) /* for testing purposes */}
+                {navbarTitles.map((title) => <div>{title}</div>)}
             </ReactPageScroller>
 
-            <LangButton 
-                currentLanguage={getLanguage()} 
-                languages={languages} 
-                setLanguage={setLanguage} 
-                flag={t("flag")}
+            <RightMenu 
+                currentLanguage={ getLanguage() }
+                languages={ languages }
+                setLanguage={ setLanguage }
+                useTranslation={ useTranslation }
             />
         </React.Fragment>
     )

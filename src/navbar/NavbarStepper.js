@@ -1,18 +1,21 @@
-import React, { useEffect } from "react"
+import React from "react"
 import {
 	makeStyles
 } from "@material-ui/core/styles"
 import {
-	Button,
+	// Button,
 	MobileStepper
 } from "@material-ui/core"
 import {
-	KeyboardArrowLeft,
-	KeyboardArrowRight
+	// KeyboardArrowLeft,
+	// KeyboardArrowRight
 } from "@material-ui/icons"
 
 const useStyles = makeStyles({
 	root: {
+	},
+	progressBar: {
+		width: "100%"
 	}
 })
 
@@ -21,13 +24,13 @@ export default function NavbarStepper(props) {
 	const steps = props.steps
 	const activeStep = props.currentPage
 
-	const handleNext = () => {
-		props.setCurrentPage((prevPageNumber) => prevPageNumber + 1)
-	}
+	// const handleNext = () => {
+	// 	// props.setCurrentPage((prevPageNumber) => prevPageNumber + 1)
+	// }
 
-	const handleBack = () => {
-		props.setCurrentPage((prevPageNumber) => prevPageNumber - 1)
-	}
+	// const handleBack = () => {
+	// 	// props.setCurrentPage((prevPageNumber) => prevPageNumber - 1)
+	// }
 
 	return (
 		<MobileStepper 
@@ -36,18 +39,19 @@ export default function NavbarStepper(props) {
 			position="bottom"
 			activeStep={ activeStep }
 			className={ classes.root }
-			nextButton={
-				<Button size="small" onClick={ handleNext } disabled={ activeStep === steps - 1 }>
-					Next
-					<KeyboardArrowRight />
-				</Button>
-			}
-			backButton= { 
-				<Button size="small" onClick={ handleBack } disabled={ activeStep === 0 }>
-					<KeyboardArrowLeft />
-					Back
-				</Button>
-			}
+			LinearProgressProps={ { className: classes.progressBar} }
+			// nextButton={
+			// 	<Button size="small" onClick={ handleNext } disabled={ activeStep === steps - 1 }>
+			// 		Next
+			// 		<KeyboardArrowRight />
+			// 	</Button>
+			// }
+			// backButton= { 
+			// 	<Button size="small" onClick={ handleBack } disabled={ activeStep === 0 }>
+			// 		<KeyboardArrowLeft />
+			// 		Back
+			// 	</Button>
+			// }
 		/>
 	)
 }

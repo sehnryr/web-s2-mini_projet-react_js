@@ -12,7 +12,11 @@ export default function PageScroller(props) {
 	props.useTranslation()
 
 	const handlePageChange = (pageNumber) => {
-		pageNumber !== props.currentPage && props.setCurrentPage(pageNumber)
+		// if (pageNumber !== props.currentPage && props.currentPage !== props.fastPage) {
+		// 	console.log(props.fastPage + " " + props.currentPage)
+		// 	props.setCurrentPage(pageNumber)
+		// }
+		props.setCurrentPage(pageNumber)
 	}
 
 	return (

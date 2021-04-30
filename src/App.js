@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import PageScroller from "./pages/PageScroller"
 import Navbar from "./navbar/Navbar"
 import { RightMenu } from "./menus/Menus"
@@ -37,9 +37,11 @@ function App(props) {
 			/>
 
 			<PageScroller
+				numPages={ titles.length }
 				titles={ titles }
 				currentPage={ currentPage }
 				setCurrentPage={ setCurrentPage }
+				fastPage={ fastPage }
 				setFastPage={ setFastPage }
 				useTranslation={ useTranslation }
 			/>

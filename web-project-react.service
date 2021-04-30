@@ -3,8 +3,8 @@ Description=Serve for a web project
 After=network.target
 
 [Service]
-# WorkingDirectory=/var/www/melois.eu/react
-ExecStart=/usr/bin/serve -l 5050 -s /var/www/melois.eu/react/build
+WorkingDirectory=/var/www/melois.dev/react-demo
+ExecStart=/usr/bin/yarn serve -l 5000 -s /var/www/melois.dev/react-demo/build
 User=root
 Group=root
 

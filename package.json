@@ -17,6 +17,7 @@
     "react-page-scroller": "^2.1.0",
     "react-scripts": "4.0.3",
     "react-world-flags": "^1.4.0",
+    "serve": "^11.3.2",
     "web-vitals": "^1.1.1"
   },
   "scripts": {

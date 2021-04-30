@@ -5,13 +5,22 @@ import {
 	List, 
 	ListItem, 
 	ListItemIcon, 
-	ListItemText 
+	ListItemText, 
+	makeStyles
 } from "@material-ui/core"
 import { Language } from "@material-ui/icons"
 import FlagIcon from "../lang/FlagIcon"
 
-function RightMenu(props) {
+const useStyles = makeStyles({
+	root: {
+		position: "absolute",
+		top: ".5rem",
+		right: ".5rem"
+	}
+})
 
+function RightMenu(props) {
+	const classes = useStyles()
 	const anchor = "right"
 	const t = props.useTranslation()
 	const languages = Object.keys(props.languages)
@@ -58,7 +67,10 @@ function RightMenu(props) {
 
 	return (
 		<React.Fragment>
-			<IconButton onClick={toggleDrawer(anchor, true)}>
+			<IconButton  
+				className={ classes.root }
+				onClick={ toggleDrawer(anchor, true) }
+			>
 				<Language />
 			</IconButton>
 			<SwipeableDrawer

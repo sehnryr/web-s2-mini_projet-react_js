@@ -1,5 +1,5 @@
-import React, { useState } from "react"
-import ReactPageScroller from "react-page-scroller";
+import React, { useState, useEffect } from "react"
+import PageScroller from "./pages/PageScroller"
 import Navbar from "./navbar/Navbar"
 import { RightMenu } from "./menus/Menus"
 import { 
@@ -21,28 +21,28 @@ setTranslations({ fr_FR, en_US })
 setDefaultLanguage(Object.keys(languages)[0])
 
 function App(props) {
-	// const t = useTranslation()
 	useTranslation()
 
-	const navbarTitles = Object.values(languages[getLanguage()]["titles"])
+	const titles = Object.values(languages[getLanguage()]["titles"])
 
-	const [ currentPage, handlePageChange ] = useState(0) // we indicate the initial page index in useState
+	const [ currentPage, setCurrentPage ] = useState(0) // we indicate the initial page index in useState
+	const [ fastPage, setFastPage ] = useState(currentPage)
 
 	return (
 		<React.Fragment>
 			<Navbar 
-				titles={navbarTitles} 
-				currentPage={currentPage}
+				titles={ titles } 
+				currentPage={ fastPage }
+				setCurrentPage={ setCurrentPage }
 			/>
 
-			<ReactPageScroller
-				animationTimer={600}
-				pageOnChange={handlePageChange}
-				onBeforePageScroll={console.log}
-				customPageNumber={currentPage}
-			>
-				{navbarTitles.map((title) => <div>{title}</div>)}
-			</ReactPageScroller>
+			<PageScroller
+				titles={ titles }
+				currentPage={ currentPage }
+				setCurrentPage={ setCurrentPage }
+				setFastPage={ setFastPage }
+				useTranslation={ useTranslation }
+			/>
 
 			<RightMenu 
 				currentLanguage={ getLanguage() }

@@ -3,31 +3,3 @@ body {
 	margin: 0;
 	padding: 0;
 }
-
-/* #root {
-	margin: 0;
-	padding: 0;
-	display: grid;
-	grid-template-columns: 1fr 80rem 1fr;
-	min-height: 100vh;
-} */
-
-/* nav {
-	position: -webkit-sticky;
-	position: sticky;
-	margin-top: auto;
-	margin-bottom: auto;
-} */
-
-nav {
-	position: absolute;
-	top: 50vh;
-	transform: translateY(-50%);
-}
-
-#langSelector,
-#root > button {
-	position: absolute;
-	top: .5rem;
-	right: .5rem;
-}

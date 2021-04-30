@@ -1,13 +1,13 @@
 {
-    "titles": {
-        "presentation": "Présentation",
-        "principle": "Principe & Fonctionnement",
-        "demo": "Démonstration",
-        "conclusion": "Conclusion"
-    },
-    "code": "fr",
-    "languages": {
-        "fr_FR": "Français",
-        "en_US": "Anglais"
-    }
+	"titles": {
+		"presentation": "Présentation",
+		"principle": "Principe & Fonctionnement",
+		"demo": "Démonstration",
+		"conclusion": "Conclusion"
+	},
+	"code": "fr",
+	"languages": {
+		"fr_FR": "Français",
+		"en_US": "Anglais"
+	}
 }

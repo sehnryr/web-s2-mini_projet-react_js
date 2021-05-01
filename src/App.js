@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import PageScroller from "./pages/PageScroller"
 import Navbar from "./navbar/Navbar"
 import { RightMenu } from "./menus/Menus"
@@ -15,37 +15,24 @@ import en_US from "./lang/en_US.json"
 
 import "./style.css"
 
-const languages = { "fr_FR": fr_FR, "en_US": en_US }
+const languages = { fr_FR, en_US }
 
 setTranslations({ fr_FR, en_US })
 setDefaultLanguage(Object.keys(languages)[0])
 
-function App(props) {
-	useTranslation()
-
+export default function App() {
+	const t = useTranslation()
 	const titles = Object.values(languages[getLanguage()]["titles"])
-
-	const [ currentPage, setCurrentPage ] = useState(0) // we indicate the initial page index in useState
-	const [ fastPage, setFastPage ] = useState(currentPage)
+	console.log(titles)
 
 	return (
 		<React.Fragment>
 			<Navbar 
-				titles={ titles } 
-				currentPage={ fastPage }
-				setCurrentPage={ setCurrentPage }
-			/>
-
-			<PageScroller
-				numPages={ titles.length }
 				titles={ titles }
-				currentPage={ currentPage }
-				setCurrentPage={ setCurrentPage }
-				fastPage={ fastPage }
-				setFastPage={ setFastPage }
-				useTranslation={ useTranslation }
 			/>
-
+			<PageScroller 
+				titles={ titles }
+			/>
 			<RightMenu 
 				currentLanguage={ getLanguage() }
 				languages={ languages }
@@ -55,5 +42,3 @@ function App(props) {
 		</React.Fragment>
 	)
 }
-
-export default App

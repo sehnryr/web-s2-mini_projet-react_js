@@ -1,7 +1,7 @@
 import React from "react"
 import NavbarButton from "./NavbarButton"
 import NavbarItem from "./NavbarItem"
-import NavbarStepper from "./NavbarStepper"
+// import NavbarStepper from "./NavbarStepper"
 import { makeStyles } from "@material-ui/core/styles"
 
 const useStyles = makeStyles({
@@ -25,11 +25,11 @@ function Navbar(props) {
 					{navbarItems}
 				</ul>
 			</nav>
-			<NavbarStepper 
+			{/* <NavbarStepper 
 				steps={ titles.length } 
 				currentPage={ props.currentPage }
 				setCurrentPage={ props.setCurrentPage }
-			/>
+			/> */}
 		</React.Fragment>
 	)
 }

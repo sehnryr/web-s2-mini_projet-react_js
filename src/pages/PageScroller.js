@@ -1,33 +1,35 @@
 import React from "react"
-import ReactPageScroller from "react-page-scroller"
-import { makeStyles } from "@material-ui/core"
+import ReactFullpage from "@fullpage/react-fullpage";
+import {
+	makeStyles
+} from "@material-ui/core"
 
 const useStyles = makeStyles({
 	root: {
+		textAlign: "center"
 	}
 })
 
 export default function PageScroller(props) {
 	const classes = useStyles()
-	props.useTranslation()
 
-	const handlePageChange = (pageNumber) => {
-		// if (pageNumber !== props.currentPage && props.currentPage !== props.fastPage) {
-		// 	console.log(props.fastPage + " " + props.currentPage)
-		// 	props.setCurrentPage(pageNumber)
-		// }
-		props.setCurrentPage(pageNumber)
-	}
+	const content = (
+		props.titles.map((title, index) => (
+			<div key={ index } className="section" >
+				<h1 className={ classes.root } >{ title }</h1>
+			</div>
+		))
+	)
 
 	return (
-		<ReactPageScroller
-			className={ classes.root }
-			animationTimer={ 600 }
-			pageOnChange={ handlePageChange }
-			onBeforePageScroll={ props.setFastPage }
-			customPageNumber={ props.currentPage }
-		>
-			{ props.titles.map((title, index) => <div key={ index }>{ title }</div>) }
-		</ReactPageScroller>
+		<ReactFullpage
+			scrollingSpeed = { 600 }
+
+			render={() => (
+				<ReactFullpage.Wrapper>
+					{ content }
+				</ReactFullpage.Wrapper>
+			)}
+		/>
 	)
 }

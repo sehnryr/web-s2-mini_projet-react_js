@@ -28,6 +28,7 @@ export default function App() {
 		<React.Fragment>
 			<PageScroller 
 				titles={ titles }
+				useTranslation={ useTranslation }
 			/>
 			<RightMenu 
 				currentLanguage={ getLanguage() }

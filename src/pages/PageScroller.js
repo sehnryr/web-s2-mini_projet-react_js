@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import ReactFullpage from "@fullpage/react-fullpage";
 import {
 	makeStyles
@@ -11,8 +11,16 @@ const useStyles = makeStyles({
 })
 
 export default function PageScroller(props) {
+	// const t = props.useTranslation()
 	const classes = useStyles()
 	const anchors = props.titles
+	// const [ anchors, setAnchors ] = useState(props.titles)
+	
+	// useEffect(() => {
+	// 	if (anchors !== props.titles) {
+	// 		setAnchors(props.titles)
+	// 	}
+	// })
 
 	const content = (
 		props.titles.map((title, index) => (

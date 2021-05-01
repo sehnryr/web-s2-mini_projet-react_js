@@ -12,6 +12,7 @@ const useStyles = makeStyles({
 
 export default function PageScroller(props) {
 	const classes = useStyles()
+	const anchors = props.titles
 
 	const content = (
 		props.titles.map((title, index) => (
@@ -23,7 +24,12 @@ export default function PageScroller(props) {
 
 	return (
 		<ReactFullpage
-			scrollingSpeed = { 600 }
+			className={ classes.navigation }
+
+			navigation={ true }
+			navigationPosition="left"
+			navigationTooltips={ anchors }
+			scrollingSpeed={ 600 }
 
 			render={() => (
 				<ReactFullpage.Wrapper>

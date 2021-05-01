@@ -1,6 +1,5 @@
 import React from "react"
 import PageScroller from "./pages/PageScroller"
-import Navbar from "./navbar/Navbar"
 import { RightMenu } from "./menus/Menus"
 import { 
 	setLanguage,
@@ -27,9 +26,6 @@ export default function App() {
 
 	return (
 		<React.Fragment>
-			<Navbar 
-				titles={ titles }
-			/>
 			<PageScroller 
 				titles={ titles }
 			/>

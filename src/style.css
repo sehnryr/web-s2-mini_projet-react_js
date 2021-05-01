@@ -4,3 +4,7 @@ body {
 	padding: 0;
 	font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
+
+.fp-tooltip {
+	color: #333333 !important
+}

@@ -1,6 +1,8 @@
 import * as React from "react"
-import FlagIconFactory from "react-flag-icon-css"
+import { CustomFlagIconFactory } from "react-flag-icon-css"
+import { styles, codes } from './custom-flags'
 
-const FlagIcon = FlagIconFactory(React, {useCssModules: false})
+const options = { useCssModules: false, customCodes: codes }
+const FlagIcon = CustomFlagIconFactory(React, options)
 
 export default FlagIcon

@@ -27,7 +27,7 @@ object-assign
 */
 
 /*!
- * @fullpage/react-fullpage 0.1.19
+ * @fullpage/react-fullpage 0.1.20
  * https://github.com/alvarotrigo/react-fullpage
  * @license https://github.com/alvarotrigo/react-fullpage#license
  *

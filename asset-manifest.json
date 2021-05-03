@@ -6,19 +6,19 @@
     "runtime-main.js": "/web-s2-mini_projet-react_js/static/js/runtime-main.31eb65c2.js",
     "runtime-main.js.map": "/web-s2-mini_projet-react_js/static/js/runtime-main.31eb65c2.js.map",
     "static/css/2.ede77f0b.chunk.css": "/web-s2-mini_projet-react_js/static/css/2.ede77f0b.chunk.css",
-    "static/js/2.1524969f.chunk.js": "/web-s2-mini_projet-react_js/static/js/2.1524969f.chunk.js",
-    "static/js/2.1524969f.chunk.js.map": "/web-s2-mini_projet-react_js/static/js/2.1524969f.chunk.js.map",
+    "static/js/2.42ed716d.chunk.js": "/web-s2-mini_projet-react_js/static/js/2.42ed716d.chunk.js",
+    "static/js/2.42ed716d.chunk.js.map": "/web-s2-mini_projet-react_js/static/js/2.42ed716d.chunk.js.map",
     "index.html": "/web-s2-mini_projet-react_js/index.html",
     "static/css/2.ede77f0b.chunk.css.map": "/web-s2-mini_projet-react_js/static/css/2.ede77f0b.chunk.css.map",
     "static/css/main.debd8a03.chunk.css.map": "/web-s2-mini_projet-react_js/static/css/main.debd8a03.chunk.css.map",
-    "static/js/2.1524969f.chunk.js.LICENSE.txt": "/web-s2-mini_projet-react_js/static/js/2.1524969f.chunk.js.LICENSE.txt",
+    "static/js/2.42ed716d.chunk.js.LICENSE.txt": "/web-s2-mini_projet-react_js/static/js/2.42ed716d.chunk.js.LICENSE.txt",
     "static/media/flag-icon.css": "/web-s2-mini_projet-react_js/static/media/zw.f5ceeff7.svg",
     "static/media/styles.css": "/web-s2-mini_projet-react_js/static/media/eo.ff5658e1.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.31eb65c2.js",
     "static/css/2.ede77f0b.chunk.css",
-    "static/js/2.1524969f.chunk.js",
+    "static/js/2.42ed716d.chunk.js",
     "static/css/main.debd8a03.chunk.css",
     "static/js/main.070b3c51.chunk.js"
   ]

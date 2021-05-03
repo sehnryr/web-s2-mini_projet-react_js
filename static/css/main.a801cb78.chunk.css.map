@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/style.css"],"names":[],"mappings":"AAAA,WAEC,QAAS,CACT,SAAU,CACV,+CACD,CAEA,YACC,oBACD","file":"main.a801cb78.chunk.css","sourcesContent":[":root,\nbody {\n\tmargin: 0;\n\tpadding: 0;\n\tfont-family: \"Roboto\", Arial, Helvetica, sans-serif;\n}\n\n.fp-tooltip {\n\tcolor: #333333 !important\n}"]}

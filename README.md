@@ -1,9 +1,16 @@
 # web-s2-mini_projet-react_js 
-<div align="center">
+<p align="center">
   <a href=https://fr.reactjs.org>
     <img height="250px" src="https://dwglogo.com/wp-content/uploads/2017/09/React_logo.png" alt="React_logo">
   </a>
-</div>
+</p>
+<p align="center">
+  <a href="//github.com/sehnryr/web-s2-mini_projet-react_js/releases"><img src="https://img.shields.io/github/v/release/sehnryr/web-s2-mini_projet-react_js"></a>
+  <a href="//github.com/sehnryr/web-s2-mini_projet-react_js/commits/main"><img src="https://img.shields.io/github/last-commit/sehnryr/web-s2-mini_projet-react_js"></a>
+  <a href="//github.com/sehnryr/web-s2-mini_projet-react_js/blob/main/LICENSE.md"><img src="https://img.shields.io/github/license/sehnryr/web-s2-mini_projet-react_js"></a>
+  <a href="//github.com/sehnryr/web-s2-mini_projet-react_js"><img src="https://img.shields.io/github/languages/code-size/sehnryr/web-s2-mini_projet-react_js"></a>
+  <a href="//github.com/sehnryr/web-s2-mini_projet-react_js/issues"><img src="https://img.shields.io/github/issues-raw/sehnryr/web-s2-mini_projet-react_js"></a>
+</p>
 
 ## Table of Contents
 

@@ -15,7 +15,7 @@ export default function PageScroller(props) {
 	const classes = useStyles()
 	const anchors = props.titles
 	// const [ anchors, setAnchors ] = useState(props.titles)
-	
+
 	// useEffect(() => {
 	// 	if (anchors !== props.titles) {
 	// 		setAnchors(props.titles)
@@ -24,24 +24,24 @@ export default function PageScroller(props) {
 
 	const content = (
 		props.titles.map((title, index) => (
-			<div key={ index } className="section" >
-				<h1 className={ classes.root } >{ title }</h1>
+			<div key={index} className="section" >
+				<h1 className={classes.root} >{title}</h1>
 			</div>
 		))
 	)
 
 	return (
 		<ReactFullpage
-			className={ classes.navigation }
+			className={classes.navigation}
 
-			navigation={ true }
+			navigation={true}
 			navigationPosition="left"
-			navigationTooltips={ anchors }
-			scrollingSpeed={ 600 }
+			navigationTooltips={anchors}
+			scrollingSpeed={600}
 
 			render={() => (
 				<ReactFullpage.Wrapper>
-					{ content }
+					{ content}
 				</ReactFullpage.Wrapper>
 			)}
 		/>

@@ -1,0 +1,14 @@
+{
+	"titles": {
+		"presentation": "Prezento",
+		"principle": "Principo kaj Operacio",
+		"demo": "Manifestacio",
+		"conclusion": "Konkludo"
+	},
+	"code": "eo",
+	"languages": {
+		"fr_FR": "La franca",
+		"en_US": "La angla",
+		"eo_EO": "Esperanto"
+	}
+}

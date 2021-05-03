@@ -5,13 +5,12 @@
   "homepage": "https://sehnryr.github.io/web-s2-mini_projet-react_js/",
   "license": "AFL-3.0",
   "dependencies": {
-    "@fullpage/react-fullpage": "^0.1.19",
     "@material-ui/core": "^4.11.4",
     "@material-ui/icons": "^4.11.2",
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.6",
-    "gh-pages": "^3.1.0",
     "@testing-library/user-event": "^13.1.8",
+    "gh-pages": "^3.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-flag-icon-css": "^1.0.25",
@@ -44,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@fullpage/react-fullpage": "https://github.com/alvarotrigo/react-fullpage.git#dev"
   }
 }

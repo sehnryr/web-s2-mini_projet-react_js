@@ -14,7 +14,7 @@
 
 ## Table of Contents
 
-- [Installation](https://github.com/sehnryr/web-s2-mini_projet-react_js#installation)
+- [Installation](#installation)
 
 ## Installation
 

@@ -12,7 +12,7 @@
   <a href="//github.com/sehnryr/web-s2-mini_projet-react_js/issues"><img src="https://img.shields.io/github/issues-raw/sehnryr/web-s2-mini_projet-react_js"></a>
 </p>
 
-This is a school project where we have to present a Javascript library. Us will be presenting ReactJS, a JavaScript library for building user interfaces.
+This is our second semester school project where we have to present a Javascript library. Us will be presenting ReactJS, a JavaScript library for building user interfaces.
 
 It's quite the overengineered project because we could just do a PowerPoint. But we think it's better to practice the library by creating a website made with that same library and its environment to present the said library !
 

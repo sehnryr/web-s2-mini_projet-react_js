@@ -39,6 +39,13 @@ To start the developpment environment :
 ```
 yarn start
 ```
+<br />
+
+To build the website (from the main branch) :
+```
+yarn deploy
+```
+This will push the build to the `gh-pages` branch and then, seconds after, Github Pages will updates and the new build will be available at [melois.dev/react](https://melois.dev/react)
 
 ## Versioning
 We're using [SemVer](https://semver.org/) for versioning.

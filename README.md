@@ -12,9 +12,9 @@
   <a href="//github.com/sehnryr/web-s2-mini_projet-react_js/issues"><img src="https://img.shields.io/github/issues-raw/sehnryr/web-s2-mini_projet-react_js"></a>
 </p>
 
-This is our second semester school project where we have to present a Javascript library. Us will be presenting ReactJS, a JavaScript library for building user interfaces.
+This is our second semester school project in which we have to present a Javascript library. Us will be presenting ReactJS, a JavaScript library for building user interfaces.
 
-It's quite the overengineered project because we could just do a PowerPoint. But we think it's better to practice the library by creating a website made with that same library and its environment to present the said library !
+It's quite an overengineered project because we could just do a PowerPoint. But we thought it was better to practice the library by creating a website made with that same library and its environment to present the said library !
 
 ## Table of Contents
 
@@ -45,7 +45,7 @@ To build the website (from the main branch) :
 ```
 yarn deploy
 ```
-This will push the build to the `gh-pages` branch and then, seconds after, Github Pages will updates and the new build will be available on [melois.dev/react](https://melois.dev/react)
+This will push the build to the `gh-pages` branch and then, seconds after, Github Pages will update and the new build will be available on [melois.dev/react](https://melois.dev/react)
 
 ## Versioning
 We're using [SemVer](https://semver.org/) for versioning.

@@ -56,7 +56,9 @@ export default function App() {
 
     return (
         <React.Fragment>
-            <NavBar />
+            <NavBar
+                totalCounters={counters.filter((counter) => counter.value !== 0).length}
+            />
             <Container>
                 <Counters
                     counters={counters}

@@ -10,5 +10,10 @@
 		"fr_FR": "French",
 		"en_US": "English",
 		"eo_EO": "Esperanto"
+	},
+	"pages": {
+		"demo": {
+			"counter": "Item counter"
+		}
 	}
 }

@@ -22,8 +22,7 @@ setDefaultLanguage(Object.keys(languages)[0])
 
 export default function App() {
 	const t = useTranslation()
-	const titles = Object.values(languages[getLanguage()]["titles"])
-	console.log(titles)
+	const titles = languages[getLanguage()]["titles"]
 
 	return (
 		<React.Fragment>

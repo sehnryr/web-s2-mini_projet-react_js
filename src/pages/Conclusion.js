@@ -2,17 +2,17 @@ import React from "react"
 import makeStyles from "@material-ui/core/styles/makeStyles"
 
 const useStyles = makeStyles({
-    root: {
-        textAlign: "center"
-    }
+	root: {
+		textAlign: "center"
+	}
 })
 
 export default function Conclusion(props) {
-    const classes = useStyles()
+	const classes = useStyles()
 
-    return (
-        <div className="section">
-            <h1 className={classes.root} >{props.title}</h1>
-        </div>
-    )
+	return (
+		<div className="section">
+			<h1 className={classes.root} >{props.title}</h1>
+		</div>
+	)
 }

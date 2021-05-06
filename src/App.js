@@ -21,7 +21,7 @@ setTranslations(languages)
 setDefaultLanguage(Object.keys(languages)[0])
 
 export default function App() {
-	const t = useTranslation()
+	useTranslation()
 	const titles = languages[getLanguage()]["titles"]
 
 	return (

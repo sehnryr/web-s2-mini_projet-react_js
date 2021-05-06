@@ -1,16 +1,41 @@
 import React, { useState, useEffect } from "react"
 import {
+	makeStyles
+} from "@material-ui/core/styles"
+import {
 	IconButton,
 	ButtonGroup,
-	makeStyles
+	Container,
+	Collapse,
+	Box,
+	Tooltip,
+	Paper,
+	AppBar,
+	Badge,
+	Toolbar,
+	Typography,
+	Fab
 } from "@material-ui/core/"
 import {
 	NavigateBefore,
-	NavigateNext
+	NavigateNext,
+	Code,
+	ShoppingCart,
+	Add,
+	Remove,
+	DeleteForever
 } from "@material-ui/icons"
+import {
+	LiveProvider,
+	LiveEditor,
+	LiveError,
+	LivePreview
+} from "react-live"
+import dracula from "prism-react-renderer/themes/dracula"
 
+import counter from "../demos/counter"
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
 	root: {
 		textAlign: "center"
 	},
@@ -33,13 +58,32 @@ const useStyles = makeStyles({
 		border: 0,
 		borderRadius: 4,
 		overflow: "hidden"
+	},
+	live: {
+		maxWidth: 500,
+	},
+	liveButtons: {
+		display: "flex",
+		justifyContent: "flex-end"
+	},
+	liveView: {
+		position: "relative",
+		height: 400,
+		overflow: "hidden"
+	},
+	liveCode: {
+		maxHeight: 400,
+		overflowY: "scroll"
 	}
-})
+}))
 
 export default function Demo(props) {
 	const classes = useStyles()
 	const t = props.useTranslation()
 
+	const [collapse, setCollapse] = useState({
+		counterCode: false
+	})
 	const [handleMovement, setHandleMovement] = useState({
 		forward: function () { },
 		backward: function () { }
@@ -54,19 +98,46 @@ export default function Demo(props) {
 		}
 	}, [props.fullpageApi])
 
+	const handleCollapse = (id) => {
+		setCollapse((prev) => {
+			const newObj = Object.assign({}, prev)
+			newObj[id] = !newObj[id]
+			return newObj
+		})
+	}
+
 	return (
 		<div className="section">
 			<div className={`slide ${classes.root}`}>
 				<h2>{t("pages.demo.counter")}</h2>
-				<iframe
-					src="https://codesandbox.io/embed/react-counter-demo-xu107?fontsize=11&hidenavigation=1&theme=dark"
-					className={classes.codesandbox}
-					sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-				>
-				</iframe>
-			</div>
-			<div className={`slide ${classes.root}`}>
-				<h3>Slide 2.2</h3>
+				<Container className={classes.live}>
+					<LiveProvider
+						code={counter}
+						theme={dracula}
+						className={classes.liveEditor}
+						scope={{ AppBar, ShoppingCart, Badge, Toolbar, Typography, Container, Paper, Fab, Add, makeStyles, Box, Remove, DeleteForever }}
+						noInline={true}
+					>
+						<Collapse in={!collapse.counterCode}>
+							<Paper square className={classes.liveView}>
+								<LivePreview style={{ height: "100%" }} />
+							</Paper>
+						</Collapse>
+						<Collapse in={collapse.counterCode} >
+							<Paper square className={classes.liveCode}>
+								<LiveEditor style={{ tabSize: 2 }} />
+							</Paper>
+						</Collapse>
+						<Box className={classes.liveButtons}>
+							<Tooltip title={t("util.showcode")} placement="top">
+								<IconButton onClick={() => handleCollapse("counterCode")}>
+									<Code />
+								</IconButton>
+							</Tooltip>
+						</Box>
+						<LiveError />
+					</LiveProvider>
+				</Container>
 			</div>
 			<div className={`slide ${classes.root}`}>
 				<h3>Slide 2.3</h3>
@@ -84,6 +155,6 @@ export default function Demo(props) {
 					<NavigateNext fontSize="large" />
 				</IconButton>
 			</ButtonGroup>
-		</div>
+		</div >
 	)
 }

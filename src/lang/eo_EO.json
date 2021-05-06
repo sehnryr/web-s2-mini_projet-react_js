@@ -15,5 +15,8 @@
 		"demo": {
 			"counter": "Ero rebat"
 		}
+	},
+	"util": {
+		"showcode": "Montr kodo"
 	}
 }

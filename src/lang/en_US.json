@@ -15,5 +15,8 @@
 		"demo": {
 			"counter": "Item counter"
 		}
+	},
+	"util": {
+		"showcode": "Show code"
 	}
 }

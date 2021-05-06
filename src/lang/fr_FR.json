@@ -15,5 +15,8 @@
 		"demo": {
 			"counter": "Compteur d'articles"
 		}
+	},
+	"util": {
+		"showcode": "Afficher le code"
 	}
 }

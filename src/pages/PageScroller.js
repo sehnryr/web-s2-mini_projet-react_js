@@ -26,12 +26,17 @@ export default function PageScroller(props) {
 			navigationPosition="left"
 			navigationTooltips={anchors}
 			scrollingSpeed={600}
+			normalScrollElements=".LivePreview"
 
 			render={({ fullpageApi }) => (
 				<ReactFullpage.Wrapper>
 					<Presentation title={props.titles["presentation"]} />
 					<Principle title={props.titles["principle"]} />
-					<Demo title={props.titles["demo"]} fullpageApi={fullpageApi} useTranslation={props.useTranslation} />
+					<Demo
+						title={props.titles["demo"]}
+						fullpageApi={fullpageApi}
+						useTranslation={props.useTranslation}
+					/>
 					<Conclusion title={props.titles["conclusion"]} />
 				</ReactFullpage.Wrapper>
 			)}

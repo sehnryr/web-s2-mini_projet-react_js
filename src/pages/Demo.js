@@ -88,7 +88,6 @@ export default function Demo(props) {
 		forward: function () { },
 		backward: function () { }
 	})
-
 	useEffect(() => {
 		if (props.fullpageApi !== undefined) {
 			setHandleMovement({
@@ -118,16 +117,20 @@ export default function Demo(props) {
 						scope={{ AppBar, ShoppingCart, Badge, Toolbar, Typography, Container, Paper, Fab, Add, makeStyles, Box, Remove, DeleteForever }}
 						noInline={true}
 					>
-						<Collapse in={!collapse.counterCode}>
-							<Paper square className={classes.liveView}>
-								<LivePreview style={{ height: "100%" }} />
-							</Paper>
-						</Collapse>
-						<Collapse in={collapse.counterCode} >
-							<Paper square className={classes.liveCode}>
-								<LiveEditor style={{ tabSize: 2 }} />
-							</Paper>
-						</Collapse>
+						<Box
+							className="LivePreview"
+						>
+							<Collapse in={!collapse.counterCode}>
+								<Paper square className={classes.liveView}>
+									<LivePreview style={{ height: "100%" }} />
+								</Paper>
+							</Collapse>
+							<Collapse in={collapse.counterCode} >
+								<Paper square className={classes.liveCode}>
+									<LiveEditor style={{ tabSize: 2 }} />
+								</Paper>
+							</Collapse>
+						</Box>
 						<Box className={classes.liveButtons}>
 							<Tooltip title={t("util.showcode")} placement="top">
 								<IconButton onClick={() => handleCollapse("counterCode")}>

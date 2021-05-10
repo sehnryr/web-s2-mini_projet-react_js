@@ -13,10 +13,10 @@
 	},
 	"pages": {
 		"demo": {
-			"counter": "Ero rebat"
+			"counter": "Vendotablo"
 		}
 	},
 	"util": {
-		"showcode": "Montr kodo"
+		"showcode": "Montri la kodo"
 	}
 }

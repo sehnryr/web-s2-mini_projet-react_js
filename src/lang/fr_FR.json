@@ -10,5 +10,13 @@
 		"fr_FR": "Français",
 		"en_US": "Anglais",
 		"eo_EO": "Espéranto"
+	},
+	"pages": {
+		"demo": {
+			"counter": "Compteur d'articles"
+		}
+	},
+	"util": {
+		"showcode": "Afficher le code"
 	}
 }

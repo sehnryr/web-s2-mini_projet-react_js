@@ -1,7 +1,7 @@
 import React from "react"
 import PageScroller from "./pages/PageScroller"
 import { RightMenu } from "./menus/Menus"
-import { 
+import {
 	setLanguage,
 	setTranslations,
 	setDefaultLanguage,
@@ -11,30 +11,30 @@ import {
 
 import fr_FR from "./lang/fr_FR.json"
 import en_US from "./lang/en_US.json"
+import eo_EO from "./lang/eo_EO.json"
 
 import "./style.css"
 
-const languages = { fr_FR, en_US }
+const languages = { fr_FR, en_US, eo_EO }
 
-setTranslations({ fr_FR, en_US })
+setTranslations(languages)
 setDefaultLanguage(Object.keys(languages)[0])
 
 export default function App() {
-	const t = useTranslation()
-	const titles = Object.values(languages[getLanguage()]["titles"])
-	console.log(titles)
+	useTranslation()
+	const titles = languages[getLanguage()]["titles"]
 
 	return (
 		<React.Fragment>
-			<PageScroller 
-				titles={ titles }
-				useTranslation={ useTranslation }
+			<PageScroller
+				titles={titles}
+				useTranslation={useTranslation}
 			/>
-			<RightMenu 
-				currentLanguage={ getLanguage() }
-				languages={ languages }
-				setLanguage={ setLanguage }
-				useTranslation={ useTranslation }
+			<RightMenu
+				currentLanguage={getLanguage()}
+				languages={languages}
+				setLanguage={setLanguage}
+				useTranslation={useTranslation}
 			/>
 		</React.Fragment>
 	)

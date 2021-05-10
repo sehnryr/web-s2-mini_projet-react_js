@@ -6,5 +6,9 @@ body {
 }
 
 .fp-tooltip {
-	color: #333333 !important
+	color: #333333 !important;
+}
+
+.fp-controlArrow {
+	display: none;
 }

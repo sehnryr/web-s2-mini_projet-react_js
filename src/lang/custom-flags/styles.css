@@ -1,0 +1,7 @@
+.flag-icon-eo {
+	background-image: url(./images/4x3/eo.svg);
+}
+
+.flag-icon-eo.flag-icon-squared {
+	background-image: url(./images/1x1/eo.svg);
+}

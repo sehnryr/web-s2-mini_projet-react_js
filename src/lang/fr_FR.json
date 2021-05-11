@@ -18,5 +18,10 @@
 	},
 	"util": {
 		"showcode": "Afficher le code"
+	},
+	"content": {
+		"presentation" : "",
+		"principle" : "",
+		"conclusion" : ""
 	}
 }

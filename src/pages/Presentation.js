@@ -9,11 +9,12 @@ const useStyles = makeStyles({
 
 export default function Presentation(props) {
 	const classes = useStyles()
+	const t = props.useTranslation()
 
 	return (
 		<div className="section">
 			<h1 className={classes.root} >{props.title}</h1>
-			<p>{props.content}</p>
+			<p>{t("content.presentation")}</p>
 		</div>
 	)
 }

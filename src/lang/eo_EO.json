@@ -20,7 +20,7 @@
 		"showcode": "Montri la kodo"
 	},
 	"content": {
-		"presentation" : "React estas liberan bibliotekon de javascript evolvita de Facebook, Instagram kaj la kolektivo ekde 2013. La unuaj versioj de React konceptita kaŭze de Jordan Walke estis dependajn ilojn de Facebook ĉar estis interna ilo de Facebook. Sed la 29 majo 2013 sorti une version libre sous licence Apache 2.0 grâce à Pele Hunt travaillant chez Instagram et qui assista Walke pour retirer les portions dépendantes de Facebook.",
+		"presentation" : "React estas liberan bibliotekon de javascript evolvita de Facebook, Instagram kaj la kolektivo ekde 2013. La unuaj versioj de React konceptita kaŭze de Jordan Walke estis dependajn ilojn de Facebook ĉar estis interna ilo de Facebook. Sed la 29 majo 2013 eliris libera versio sub permisilo Apache 2.0 danke al Pele Hunt laborante ĉe Instagram kaj asistanto Walke por retiri dependajn porciojn de Facebook.",
 		"principle" : " La traduction doit être réalisé ",
 		"conclusion" : ""
 	}

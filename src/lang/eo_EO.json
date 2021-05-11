@@ -18,5 +18,10 @@
 	},
 	"util": {
 		"showcode": "Montri la kodo"
+	},
+	"content": {
+		"presentation" : "",
+		"principle" : "",
+		"conclusion" : ""
 	}
 }

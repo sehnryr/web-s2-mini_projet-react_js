@@ -20,7 +20,7 @@
 		"showcode": "Show code"
 	},
 	"content": {
-		"presentation" : "React est une bibliothèque javascript libre développée par Facebook, Instagram et la communauté depuis 2013. Les première version de React créé par Jordan Walke étaient dépendantes des outils de Facebook vu qu'il s'agissait d'un outil interne à Facebook. Cependant le 29 mai 2013 sorti une version libre sous licence Apache 2.0 grâce à Pele Hunt travaillant chez Instagram et qui assista Walke pour retirer les portions dépendantes de Facebook.",
+		"presentation" : "React is an open source JavaScript library maintained by Facebook, Instagram and community since 2013. Firsts versions of React created by Jordan Walke were dependents of Facebook's tools which was an internal tool for Facebook. However, the may 19th 2013, the first open source version of React was realesed under license Apache 2.0 thanks to Pele Hunt an Instagram's ingeneer who helped Walke to remove dependents parts of Facebook.",
 		"principle" : " La traduction doit être réalisé ",
 		"conclusion" : ""
 	}

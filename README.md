@@ -41,7 +41,7 @@ cd <your local directory>
 To start the developpment environment :
 
 ```
-yarn install / yarn start
+yarn install
 ```
 
 <br />

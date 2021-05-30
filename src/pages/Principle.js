@@ -9,10 +9,12 @@ const useStyles = makeStyles({
 
 export default function Principle(props) {
 	const classes = useStyles()
+	const t = props.useTranslation()
 
 	return (
 		<div className="section">
 			<h1 className={classes.root} >{props.title}</h1>
+			<p>{t("content.principle")}</p>
 		</div>
 	)
 }

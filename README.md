@@ -35,10 +35,16 @@ cd <your local directory>
 ```
 
 ## Getting Started
+ To setup the developpment environment :
+```
+yarn install
+```
+  
 To start the developpment environment :
 ```
 yarn start
 ```
+  
 <br />
 
 To build the website (from the main branch) :

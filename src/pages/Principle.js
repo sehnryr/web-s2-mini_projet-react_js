@@ -6,7 +6,8 @@ const useStyles = makeStyles({
 		textAlign: "center"
 	},
 	tbody: {
-		textAlign: "center"
+		textAlign: "center",
+		margin: "2%"
 	}
 })
 

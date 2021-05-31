@@ -14,7 +14,8 @@
     "react-flag-icon-css": "^1.0.25",
     "react-live": "^2.2.3",
     "react-multi-lang": "^2.1.1",
-    "react-scripts": "4.0.3"
+    "react-scripts": "4.0.3",
+    "yarn": "^1.22.10"
   },
   "scripts": {
     "start": "react-scripts start",

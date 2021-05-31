@@ -38,16 +38,10 @@ cd <your local directory>
 
 ## Getting Started
 
-To setup the developpment environment :
-
-```
-yarn install / yarn start
-```
-
 To start the developpment environment :
 
 ```
-yarn start
+yarn install
 ```
 
 <br />

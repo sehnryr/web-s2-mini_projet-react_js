@@ -33,7 +33,8 @@ export default function PageScroller(props) {
 				<ReactFullpage.Wrapper>
 					<Presentation title={props.titles["presentation"]} useTranslation={props.useTranslation}/>
 					<Presentation_2 title={props.titles["presentation_2"]} useTranslation={props.useTranslation}/>
-					<Principle title={props.titles["principle"]} />
+					<Principle title={props.titles["principle"]} useTranslation={props.useTranslation}/>
+
 					<Demo
 						title={props.titles["demo"]}
 						fullpageApi={fullpageApi}

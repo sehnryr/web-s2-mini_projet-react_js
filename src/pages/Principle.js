@@ -4,6 +4,9 @@ import makeStyles from "@material-ui/core/styles/makeStyles"
 const useStyles = makeStyles({
 	root: {
 		textAlign: "center"
+	},
+	tbody: {
+		textAlign: "center"
 	}
 })
 
@@ -14,7 +17,7 @@ export default function Principle(props) {
 	return (
 		<div className="section">
 			<h1 className={classes.root} >{props.title}</h1>
-			<p>{t("content.principle")}</p>
+			<p className={classes.tbody}>{t("content.principle")}</p>
 		</div>
 	)
 }

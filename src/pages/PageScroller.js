@@ -37,7 +37,7 @@ export default function PageScroller(props) {
 						fullpageApi={fullpageApi}
 						useTranslation={props.useTranslation}
 					/>
-					<Conclusion title={props.titles["conclusion"]} />
+					<Conclusion title={props.titles["conclusion"]} useTranslation={props.useTranslation}/>
 				</ReactFullpage.Wrapper>
 			)}
 		/>

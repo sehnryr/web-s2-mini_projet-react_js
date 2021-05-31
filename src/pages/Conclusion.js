@@ -13,7 +13,7 @@ const useStyles = makeStyles({
 
 export default function Conclusion(props) {
 	const classes = useStyles()
-	const t = useTranslation()
+	const t = props.useTranslation()
 
 	return (
 		<div className="section">

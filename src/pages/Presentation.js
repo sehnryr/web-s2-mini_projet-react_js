@@ -4,6 +4,10 @@ import makeStyles from "@material-ui/core/styles/makeStyles"
 const useStyles = makeStyles({
 	root: {
 		textAlign: "center"
+	},
+	tbody: {
+		textAlign: "center",
+		margin: "2%"
 	}
 })
 
@@ -13,8 +17,8 @@ export default function Presentation(props) {
 
 	return (
 		<div className="section">
-			<h1 className={classes.root} >{props.title}</h1>
-			<p>{t("content.presentation")}</p>
+			<h1 className={classes.root}>{props.title}</h1>
+			<p className={classes.tbody}>{t("content.presentation")}</p>
 		</div>
 	)
 }

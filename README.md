@@ -1,4 +1,5 @@
-# web-s2-mini_projet-react_js 
+# web-s2-mini_projet-react_js
+
 <p align="center">
   <a href=https://fr.reactjs.org>
     <img height="250px" src="https://dwglogo.com/wp-content/uploads/2017/09/React_logo.png" alt="React_logo">
@@ -28,30 +29,31 @@ You can install `nodejs` from [`nodesource`](https://github.com/nodesource/distr
 
 Use `yarn` for the package manager (Because otherwise there will be a conflict with the different lockfiles).
 
-Clone the project locally *(change <your local directory> to whatever name you want for your directory)*:
+Clone the project locally _(change <your local directory> to whatever name you want for your directory)_:
+
 ```
 git clone git@github.com:sehnryr/web-s2-mini_projet-react_js.git <your local directory>
 cd <your local directory>
 ```
 
 ## Getting Started
- To setup the developpment environment :
+
+To start the developpment environment :
+
 ```
 yarn install
 ```
-  
-To start the developpment environment :
-```
-yarn start
-```
-  
+
 <br />
 
 To build the website (from the main branch) :
+
 ```
 yarn deploy
 ```
+
 This will push the build to the `gh-pages` branch and then, seconds after, Github Pages will update and the new build will be available on [melois.dev/react](https://melois.dev/react)
 
 ## Versioning
+
 We're using [SemVer](https://semver.org/) for versioning.

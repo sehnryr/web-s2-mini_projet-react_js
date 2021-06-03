@@ -18,7 +18,7 @@ export default function Presentation_2(props) {
 	return (
 		<div className="section">
 			<h1 className={classes.root} >{props.title}</h1>
-			<p>{t("content.presentation_2")}</p>
+			<p className={classes.tbody}>{t("content.presentation_2")}</p>
 		</div>
 	)
 }

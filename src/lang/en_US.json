@@ -1,6 +1,7 @@
 {
 	"titles": {
-		"presentation": "Presentation",
+		"presentation": "Presentation 1/2",
+		"presentation_2": "Presentation 2/2",
 		"principle": "Principle & Functioning",
 		"demo": "Demonstration",
 		"conclusion": "Conclusion"
@@ -21,7 +22,8 @@
 	},
 	"content": {
 		"presentation" : "React is an open source JavaScript library maintained by Facebook, Instagram and community since 2013. Firsts versions of React created by Jordan Walke were dependents of Facebook's tools which was an internal tool for Facebook. However, the may 19th 2013, the first open source version of React was realesed under license Apache 2.0 thanks to Pele Hunt an Instagram's ingeneer who helped Walke to remove dependents parts of Facebook.",
+		"presentation_2" : "nrbf",
 		"principle" : " La traduction doit être réalisé ",
-		"conclusion" : ""
+		"conclusion" : "eet"
 	}
 }

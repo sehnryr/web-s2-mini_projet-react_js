@@ -4,7 +4,6 @@ import {
 } from "@material-ui/core/styles"
 import {
 	IconButton,
-	ButtonGroup,
 	Container,
 	Collapse,
 	Box,
@@ -17,8 +16,6 @@ import {
 	Fab
 } from "@material-ui/core/"
 import {
-	NavigateBefore,
-	NavigateNext,
 	Code,
 	ShoppingCart,
 	Add,
@@ -33,17 +30,13 @@ import {
 } from "react-live"
 import dracula from "prism-react-renderer/themes/dracula"
 
+import SlideButtons from "../buttons/SlideButtons"
+
 import counter from "../demos/counter"
 
 const useStyles = makeStyles((theme) => ({
 	root: {
 		textAlign: "center"
-	},
-	buttonGroup: {
-		position: "absolute",
-		zIndex: 4,
-		bottom: 0,
-		right: 0,
 	},
 	button: {
 		position: "absolute",
@@ -146,18 +139,10 @@ export default function Demo(props) {
 				<h3>Slide 2.3</h3>
 			</div>
 
-			<ButtonGroup className={classes.buttonGroup}>
-				<IconButton
-					onClick={handleMovement.backward}
-				>
-					<NavigateBefore fontSize="large" />
-				</IconButton>
-				<IconButton
-					onClick={handleMovement.forward}
-				>
-					<NavigateNext fontSize="large" />
-				</IconButton>
-			</ButtonGroup>
+			<SlideButtons
+				forward={handleMovement.forward}
+				backward={handleMovement.backward}
+			/>
 		</div >
 	)
 }

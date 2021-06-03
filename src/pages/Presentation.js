@@ -9,8 +9,7 @@ const useStyles = makeStyles({
 		textAlign: "center"
 	},
 	tbody: {
-		textAlign: "center",
-		margin: "2%"
+		fontSize: "125%"
 	}
 })
 
@@ -34,17 +33,26 @@ export default function Presentation(props) {
 	return (
 		<div className="section">
 			<div className={`slide ${classes.root}`}>
+				<img src="https://dwglogo.com/wp-content/uploads/2017/09/React_logo.png" alt="Description de l'image React-icon.svg." width="45%"/>
+			</div>
+			
+			<div className={`slide ${classes.root}`}>
 				<h1 className={classes.root}>{props.title}</h1>
-				<Container>
+				<Container className={classes.tbody}>
 					{t("content.presentation")}
 				</Container>
 			</div>
 
 			<div className={`slide ${classes.root}`}>
-				<h1 className={classes.root}>{props.title}</h1>
-				<Container>
-					{t("content.presentation_2")}
-				</Container>
+			<h1 className={classes.root}>Satistique de commits</h1>
+				<img src="https://i.imgur.com/eeV5mpu.png" alt="Statistique de commit!" width="35%"/>
+				<p>Capture issue de <a href="https://github.com/facebook/react/graphs/contributors">https://github.com/facebook/react/graphs/contributors</a></p>
+			</div>
+
+			<div className={`slide ${classes.root}`}>
+				<h1 className={classes.root}>Satistique d'utilisateur</h1>
+				<img src="https://i.imgur.com/4eYAp6c.png" alt="Il y a + de 6.5M d'utilisateurs!" width="25%"/>
+				<p>Capture issue de <a href="https://github.com/facebook/react">https://github.com/facebook/react</a></p>
 			</div>
 
 			<SlideButtons

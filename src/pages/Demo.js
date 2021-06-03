@@ -30,8 +30,6 @@ import {
 } from "react-live"
 import dracula from "prism-react-renderer/themes/dracula"
 
-import SlideButtons from "../buttons/SlideButtons"
-
 import counter from "../demos/counter"
 
 const useStyles = makeStyles((theme) => ({
@@ -77,18 +75,6 @@ export default function Demo(props) {
 	const [collapse, setCollapse] = useState({
 		counterCode: false
 	})
-	const [handleMovement, setHandleMovement] = useState({
-		forward: function () { },
-		backward: function () { }
-	})
-	useEffect(() => {
-		if (props.fullpageApi !== undefined) {
-			setHandleMovement({
-				forward: () => props.fullpageApi.moveSlideRight(),
-				backward: () => props.fullpageApi.moveSlideLeft()
-			})
-		}
-	}, [props.fullpageApi])
 
 	const handleCollapse = (id) => {
 		setCollapse((prev) => {
@@ -100,49 +86,40 @@ export default function Demo(props) {
 
 	return (
 		<div className="section">
-			<div className={`slide ${classes.root}`}>
-				<h2>{t("pages.demo.counter")}</h2>
-				<Container className={classes.live}>
-					<LiveProvider
-						code={counter}
-						theme={dracula}
-						className={classes.liveEditor}
-						scope={{ AppBar, ShoppingCart, Badge, Toolbar, Typography, Container, Paper, Fab, Add, makeStyles, Box, Remove, DeleteForever }}
-						noInline={true}
+			<h1 className={classes.root}>{props.title}</h1>
+			<h2 className={classes.root}>{t("pages.demo.counter")}</h2>
+			<Container className={classes.live}>
+				<LiveProvider
+					code={counter}
+					theme={dracula}
+					className={classes.liveEditor}
+					scope={{ AppBar, ShoppingCart, Badge, Toolbar, Typography, Container, Paper, Fab, Add, makeStyles, Box, Remove, DeleteForever }}
+					noInline={true}
+				>
+					<Box
+						className="LivePreview"
 					>
-						<Box
-							className="LivePreview"
-						>
-							<Collapse in={!collapse.counterCode}>
-								<Paper square className={classes.liveView}>
-									<LivePreview style={{ height: "100%" }} />
-								</Paper>
-							</Collapse>
-							<Collapse in={collapse.counterCode} >
-								<Paper square className={classes.liveCode}>
-									<LiveEditor style={{ tabSize: 2 }} />
-								</Paper>
-							</Collapse>
-						</Box>
-						<Box className={classes.liveButtons}>
-							<Tooltip title={t("util.showcode")} placement="top">
-								<IconButton onClick={() => handleCollapse("counterCode")}>
-									<Code />
-								</IconButton>
-							</Tooltip>
-						</Box>
-						<LiveError />
-					</LiveProvider>
-				</Container>
-			</div>
-			<div className={`slide ${classes.root}`}>
-				<h3>Slide 2.3</h3>
-			</div>
-
-			<SlideButtons
-				forward={handleMovement.forward}
-				backward={handleMovement.backward}
-			/>
+						<Collapse in={!collapse.counterCode}>
+							<Paper square className={classes.liveView}>
+								<LivePreview style={{ height: "100%" }} />
+							</Paper>
+						</Collapse>
+						<Collapse in={collapse.counterCode} >
+							<Paper square className={classes.liveCode}>
+								<LiveEditor style={{ tabSize: 2 }} />
+							</Paper>
+						</Collapse>
+					</Box>
+					<Box className={classes.liveButtons}>
+						<Tooltip title={t("util.showcode")} placement="top">
+							<IconButton onClick={() => handleCollapse("counterCode")}>
+								<Code />
+							</IconButton>
+						</Tooltip>
+					</Box>
+					<LiveError />
+				</LiveProvider>
+			</Container>
 		</div >
 	)
 }

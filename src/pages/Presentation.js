@@ -48,7 +48,6 @@ export default function Presentation(props) {
 			</div>
 
 			<SlideButtons
-				className={classes.buttonGroup}
 				forward={handleMovement.forward}
 				backward={handleMovement.backward}
 			/>

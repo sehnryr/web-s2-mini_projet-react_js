@@ -29,7 +29,7 @@ You can install `nodejs` from [`nodesource`](https://github.com/nodesource/distr
 
 Use `yarn` for the package manager (Because otherwise there will be a conflict with the different lockfiles).
 
-Clone the project locally _(change <your local directory> to whatever name you want for your directory)_:
+Clone the project locally *(change <your local directory> to whatever name you want for your directory)*:
 
 ```
 git clone git@github.com:sehnryr/web-s2-mini_projet-react_js.git <your local directory>
@@ -38,10 +38,18 @@ cd <your local directory>
 
 ## Getting Started
 
-To start the developpment environment :
+Firstly, install all the depencies :
 
 ```
 yarn install
+```
+
+<br />
+
+To start the developpment environment :
+
+```
+yarn start
 ```
 
 <br />

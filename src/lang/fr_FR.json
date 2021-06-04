@@ -49,7 +49,7 @@
 			"principle_2": {
 				"resume" : "Que représente les DOM virtuelles ?",
 				"def" : "Le DOM virtuel est essentiellement une ou une copie du DOM à un moment donné"
-			}
+			},
 			"principle_3": {
 				"resume" :"L'évolution constante du noyau de React"
 			}

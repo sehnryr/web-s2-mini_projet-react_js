@@ -35,7 +35,11 @@ export default function PageScroller(props) {
 						fullpageApi={fullpageApi}
 						useTranslation={props.useTranslation}
 					/>
-					<Principle title={props.titles["principle"]} useTranslation={props.useTranslation} />
+					<Principle
+							title={props.titles["principle"]} 
+							fullpageApi={fullpageApi}
+							useTranslation={props.useTranslation}
+							 />
 					<Demo
 						title={props.titles["demo"]}
 						fullpageApi={fullpageApi}

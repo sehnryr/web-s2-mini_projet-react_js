@@ -17,7 +17,6 @@
 	"content": {
 		"presentation": "React est une bibliothèque javascript libre et développée par Facebook, Instagram et la communauté depuis 2013. Les première version de React créé par Jordan Walke étaient dépendantes des outils de Facebook vu qu'il s'agissait d'un outil interne à Facebook, elle s'appelait d’ailleurs avant FaxJS. Cependant le 29 mai 2013 sortie une version libre sous licence Apache 2.0 grâce à Pele Hunt travaillant chez Instagram et qui a assisté  Walke pour retirer les portions dépendantes de Facebook. On retrouve l’utilisation de React pour la première fois dans le fil d’actualité Facebook en 2011 puis en 2012 dans celui d’Instagram, il avait été créé pour combler des vides des programmes de l’époque surtout celui de Facebook Ads qui était difficile à gérer.",
 		"presentation_2": "Test des plus grand test ",
-		"principle": "eerbqrb",
 		"demo": {
 			"counter": "Compteur d'articles",
 			"website": "Site web"
@@ -37,6 +36,13 @@
 				"fast_development": "Développement rapide",
 				"slow_documentation": "Documentation lente"
 			}
-		}
+		},
+
+		"principle" : {
+			"resume" :"React est une librairie permettant de construire des interfaces utilisateur. React est une librairie construite autour du principe des composants",
+			"one_word": "Qu'est-ce que représente les composants ?"
+		},
+		"principle_2": "",
+		"principle_3": "",
 	}
 }

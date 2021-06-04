@@ -41,9 +41,15 @@
 
 			"principle" : {
 				"resume" :"React est une librairie permettant de construire des interfaces utilisateur. React est une librairie construite autour du principe des composants",
-				"one_word": "Que représente les composants ?"
+				"def": "interface utilisateur : Interface informatique qui coordonne les interactions homme-machine",
+				"one_word": "Que représente les composants ?",
+				"def_2":"Les composants vous permettent de découper l'interface utilisateur en éléments indépendants et réutilisable, permettant ainsi de considérer chaque élément de manière isolée"
+				
 			},
-			"principle_2": "Que représente les DOM virtuelles ?",
+			"principle_2": {
+				"resume" : "Que représente les DOM virtuelles ?",
+				"def" : "Le DOM virtuel est essentiellement une ou une copie du DOM à un moment donné"
+			}
 			"principle_3": {
 				"resume" :"L'évolution constante du noyau de React"
 			}

@@ -8,9 +8,6 @@ const useStyles = makeStyles({
 	root: {
 		textAlign: "center"
 	},
-	tbody: {
-		fontSize: "125%"
-	}
 })
 
 export default function Presentation(props) {

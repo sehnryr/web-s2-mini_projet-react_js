@@ -34,18 +34,27 @@ export default function Principle(props) {
 	return (
 
 		<div className="section">
-			
+
 			<div className={`slide ${classes.root}`}>
 				<h1 className={classes.root}>{props.title}</h1>
 				<Container>
-					{t("content.principle")}
+					{t("content.principle.resume")}
+					<br></br>
+					<h3>{t("content.principle.one_word")}</h3>
 				</Container>
 			</div>
 
 			<div className={`slide ${classes.root}`}>
 				<h1 className={classes.root}>{props.title}</h1>
 				<Container>
-					{t("content.principle_2")}
+					{t("content.principle_2.")}
+				</Container>
+			</div>
+
+			<div className={`slide ${classes.root}`}>
+				<h1 className={classes.root}>{props.title}</h1>
+				<Container>
+					{t("content.principle_3")}
 				</Container>
 			</div>
 

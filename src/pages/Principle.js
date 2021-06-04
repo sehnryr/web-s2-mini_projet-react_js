@@ -9,10 +9,6 @@ const useStyles = makeStyles({
 	root: {
 		textAlign: "center"
 	},
-	tbody: {
-		textAlign: "center",
-		margin: "2%"
-	}
 })
 
 export default function Principle(props) {

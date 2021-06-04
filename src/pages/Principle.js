@@ -1,5 +1,8 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import makeStyles from "@material-ui/core/styles/makeStyles"
+
+import SlideButtons from "../buttons/SlideButtons"
+import { Container } from "@material-ui/core"
 
 const useStyles = makeStyles({
 	root: {
@@ -15,10 +18,42 @@ export default function Principle(props) {
 	const classes = useStyles()
 	const t = props.useTranslation()
 
+	const [handleMovement, setHandleMovement] = useState({
+		forward: function () { },
+		backward: function () { }
+	})
+	useEffect(() => {
+		if (props.fullpageApi !== undefined) {
+			setHandleMovement({
+				forward: () => props.fullpageApi.moveSlideRight(),
+				backward: () => props.fullpageApi.moveSlideLeft()
+			})
+		}
+	}, [props.fullpageApi])
+
 	return (
+
 		<div className="section">
-			<h1 className={classes.root} >{props.title}</h1>
-			<p className={classes.tbody}>{t("content.principle")}</p>
-		</div>
+			
+			<div className={`slide ${classes.root}`}>
+				<h1 className={classes.root}>{props.title}</h1>
+				<Container>
+					{t("content.principle")}
+				</Container>
+			</div>
+
+			<div className={`slide ${classes.root}`}>
+				<h1 className={classes.root}>{props.title}</h1>
+				<Container>
+					{t("content.principle_2")}
+				</Container>
+			</div>
+
+			<SlideButtons
+				forward={handleMovement.forward}
+				backward={handleMovement.backward}
+			/>
+		</div >
+
 	)
 }

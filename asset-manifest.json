@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/web-s2-mini_projet-react_js/static/css/main.8eb16bb4.chunk.css",
-    "main.js": "/web-s2-mini_projet-react_js/static/js/main.2b26514c.chunk.js",
-    "main.js.map": "/web-s2-mini_projet-react_js/static/js/main.2b26514c.chunk.js.map",
+    "main.css": "/web-s2-mini_projet-react_js/static/css/main.497b310b.chunk.css",
+    "main.js": "/web-s2-mini_projet-react_js/static/js/main.3e608fdb.chunk.js",
+    "main.js.map": "/web-s2-mini_projet-react_js/static/js/main.3e608fdb.chunk.js.map",
     "runtime-main.js": "/web-s2-mini_projet-react_js/static/js/runtime-main.31eb65c2.js",
     "runtime-main.js.map": "/web-s2-mini_projet-react_js/static/js/runtime-main.31eb65c2.js.map",
-    "static/css/2.ede77f0b.chunk.css": "/web-s2-mini_projet-react_js/static/css/2.ede77f0b.chunk.css",
-    "static/js/2.90ee5620.chunk.js": "/web-s2-mini_projet-react_js/static/js/2.90ee5620.chunk.js",
-    "static/js/2.90ee5620.chunk.js.map": "/web-s2-mini_projet-react_js/static/js/2.90ee5620.chunk.js.map",
+    "static/css/2.d97529fc.chunk.css": "/web-s2-mini_projet-react_js/static/css/2.d97529fc.chunk.css",
+    "static/js/2.5133ade1.chunk.js": "/web-s2-mini_projet-react_js/static/js/2.5133ade1.chunk.js",
+    "static/js/2.5133ade1.chunk.js.map": "/web-s2-mini_projet-react_js/static/js/2.5133ade1.chunk.js.map",
     "index.html": "/web-s2-mini_projet-react_js/index.html",
-    "static/css/2.ede77f0b.chunk.css.map": "/web-s2-mini_projet-react_js/static/css/2.ede77f0b.chunk.css.map",
-    "static/css/main.8eb16bb4.chunk.css.map": "/web-s2-mini_projet-react_js/static/css/main.8eb16bb4.chunk.css.map",
-    "static/js/2.90ee5620.chunk.js.LICENSE.txt": "/web-s2-mini_projet-react_js/static/js/2.90ee5620.chunk.js.LICENSE.txt",
+    "static/css/2.d97529fc.chunk.css.map": "/web-s2-mini_projet-react_js/static/css/2.d97529fc.chunk.css.map",
+    "static/css/main.497b310b.chunk.css.map": "/web-s2-mini_projet-react_js/static/css/main.497b310b.chunk.css.map",
+    "static/js/2.5133ade1.chunk.js.LICENSE.txt": "/web-s2-mini_projet-react_js/static/js/2.5133ade1.chunk.js.LICENSE.txt",
     "static/media/flag-icon.css": "/web-s2-mini_projet-react_js/static/media/zw.f5ceeff7.svg",
     "static/media/styles.css": "/web-s2-mini_projet-react_js/static/media/eo.ff5658e1.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.31eb65c2.js",
-    "static/css/2.ede77f0b.chunk.css",
-    "static/js/2.90ee5620.chunk.js",
-    "static/css/main.8eb16bb4.chunk.css",
-    "static/js/main.2b26514c.chunk.js"
+    "static/css/2.d97529fc.chunk.css",
+    "static/js/2.5133ade1.chunk.js",
+    "static/css/main.497b310b.chunk.css",
+    "static/js/main.3e608fdb.chunk.js"
   ]
 }

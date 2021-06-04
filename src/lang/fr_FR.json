@@ -38,14 +38,14 @@
 			}
 		},
 
-		"principle" : {
-			"resume" :"React est une librairie permettant de construire des interfaces utilisateur. React est une librairie construite autour du principe des composants",
+
 			"principle" : {
 				"resume" :"React est une librairie permettant de construire des interfaces utilisateur. React est une librairie construite autour du principe des composants",
 				"one_word": "Que représente les composants ?"
 			},
 			"principle_2": "Que représente les DOM virtuelles ?",
-			"principle_3": "L'évolution constante de noyau de React"
-		}
+			"principle_3": {
+				"resume" :"L'évolution constante du noyau de React"
+			}
 	}
 }

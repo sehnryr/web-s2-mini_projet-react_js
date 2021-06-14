@@ -1248,8 +1248,8 @@
 
 "@fullpage/react-fullpage@https://github.com/alvarotrigo/react-fullpage.git#dev":
   version "0.1.20"
-  uid f3b18dfc76535f46d027f7bbf8fbce240d203acf
-  resolved "https://github.com/alvarotrigo/react-fullpage.git#f3b18dfc76535f46d027f7bbf8fbce240d203acf"
+  uid b6e541125000bd3b25f1e6b72f62ba081b3eba52
+  resolved "https://github.com/alvarotrigo/react-fullpage.git#b6e541125000bd3b25f1e6b72f62ba081b3eba52"
   dependencies:
     "@babel/polyfill" "^7.2.5"
     animejs "^3.2.1"
